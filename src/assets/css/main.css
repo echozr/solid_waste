@@ -10,6 +10,7 @@ body,
   width: 100%;
   height: 100%;
   overflow: hidden;
+  font-family: SourceHanSansCN-Medium;
 }
 
 body {
@@ -30,7 +31,7 @@ a {
   -webkit-transition: left .3s ease-in-out;
   transition: left .3s ease-in-out;
   background: #f0f0f0;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content-box {
