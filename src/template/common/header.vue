@@ -69,67 +69,72 @@ export default {
 .publicHeader {
   position: relative;
   box-sizing: border-box;
-  width: 100%;
-  height: 70px;
-  font-size: 22px;
+  width: 100vw;
+  height: 4vw;
+  font-size: 1vw;
   background-color: #323641;
   color: #fff;
   .logo {
     float: left;
-    line-height: 70px;
-    margin: 8px 35px 8px 35px;
+    width: 1.8vw;
+    height: 3vw;
+    position:absolute;
+    top:0.5vw;
+    left: 2.5vw;
   }
   .title {
     float: left;
-    width: 270px;
-    font-size: 20px;
-    height: 40px;
-    line-height: 40px;
-    margin: 15px 0;
-    padding: 0 35px;
+    width: 22vw;
+    font-size: 1.2vw;
+    height: 2.4vw;
+    line-height: 2.4vw;
+    padding: 0 2.5vw;
     border-left: 1px solid #7e9081;
+    position:absolute;
+    top:0.8vw;
+    left:6.5vw;
   }
   .rightHeader {
     float: right;
-    padding-right: 50px;
+    padding-right: 2vw;
     .user-avator {
-      margin-left: 20px;
+      margin-left: 1vw;
       position: absolute;
-      top: 14px;
-      right:400px;
+      top: 0.9vw;
+      right:27vw;
       img {
         display: block;
-        width: 40px;
-        height: 40px;
+        width: 2.2vw;
+        height: 2.2vw;
         border-radius: 50%;
       }
     }
     .user-name {
       position: absolute;
-      top: 26px;
-      right: 240px;
-      height: 20px;
+      top: 1vw;
+      right: 16vw;
+      height: 2vw;
+      line-height: 2vw;
       color: #fff;
-      width: 150px;
+      width: 10vw;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
       font-family: MicrosoftYaHei;
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 0.9vw;
     }
     .header-menu{
-      height: 25px;
+      height: 1.6vw;
       position: absolute;
-      top: 23px;
-      right: 12px;
+      top: 1.2vw;
+      right: 1vw;
       li{
         float: left;
-        font-size: 14px;
-        height: 25px;
+        font-size: 0.9vw;
+        height: 1.6vw;
         padding: 0 15px;
         border-left: 1px solid #7e9081;
-        line-height: 25px;
+        line-height: 1.6vw;
         cursor: pointer;
       }
     }

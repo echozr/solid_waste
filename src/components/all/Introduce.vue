@@ -1,8 +1,8 @@
 <template>
-  <div class="intriduce-warp" :style="{backgroundImage:imgurl}">
+  <div class="intriduce-warp" :style="{backgroundImage:'url('+imgurl+')'}">
       <img class="title"  src="../../assets/img/ptText.png"/>
       <div class="intriduce-text">
-        陕西省固体废物信息管理系统平台简介陕西省固体废物信息管理系统平台简介陕西省固体废物信息管理系统平台简介陕西省固体废物信息管理系统平台简介陕西省固体废物信陕西省固体废物信息管理系统平台简介陕西省固体废物信息管理...
+        {{content}}
       </div>
       <slot name="more"></slot>
   </div>
@@ -13,49 +13,58 @@ export default {
   props: {
     imgurl: {
       type: String,
-      default: '../../assets/images/adminbg1.png'
+      default: ''
+    },
+    content: {
+      type: String,
+      default: '陕西省固体废物信息管理系统平台简介'
     }
   }
 }
 </script>
 <style lang="less" scope>
 .intriduce-warp{
-  width: 100%;
-  height: 350px;
-  background-image: url('../../assets/images/adminbg1.png');
-  background-size: 100% 350px;
-  background-repeat: no-repeat;
-  position: relative;
+    width: 100vw;
+    height:20vw;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #242932;
+    background-position-x: right;
+    background-position-y: center;
   .title{
     position: absolute;
-    top: 50px;
-    left: 115px;
+    top: 3vw;
+    left: 8.5vw;
   }
   .intriduce-text{
-    height: 50px;
-    width: 600px;
+    width:45vw;
+    max-height: 3.5vw;
+    overflow: hidden;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 0.9vw;
     position: absolute;
-    top: 120px;
-    left: 115px;
+    top: 7vw;
+    left: 8.5vw;
+    text-indent: 2em;
+    line-height: 1.75vw;
   }
   .moreBtn{
-    width: 130px;
-    height: 36px;
+    width: 8vw;
+    height:2vw;
     background-color: #05a081;
-    TEXT-ALIGN: CENTER;
-    LINE-HEIGHT: 36px;
+    text-align: center;
+    line-height: 2vw;
     color: #ffffff;
     position: absolute;
-    top: 200px;
-    left: 113px;
+    font-size: 0.9vw;
+    top: 11.5vw;
+    left: 8.5vw;
   }
   .crumbs {
     margin: 10px 0;
     position: absolute;
-    top: 263px;
-    left: 113px;
+    top: 14.5vw;
+    left: 8.5vw;
   }
 }
 </style>

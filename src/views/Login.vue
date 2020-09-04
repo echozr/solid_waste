@@ -34,15 +34,20 @@ export default {
   },
   methods: {
     async submit () {
+      const _this = this
       this.isLogin = true
-      const { data } = await this.$axios.user.login(this.form)
-      console.log(data)
-      const { code, data: url } = data
+
+      // const { data } = await this.$axios.user.login(this.form)
+      // console.log(data)
+      // const { code, data: url } = data
       this.isMsg = '验证成功即将跳转'
-      if (code === 200) {
-        sessionStorage.setItem('token', url)
-        this.$router.push({ path: '/' })
-      }
+      // if (code === 200) {
+      // sessionStorage.setItem('token', url)
+      setTimeout(() => {
+        sessionStorage.setItem('token', 'url')
+        _this.$router.push({ path: '/' })
+      }, 3000)
+      // }
     }
   }
 }

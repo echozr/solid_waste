@@ -7,7 +7,6 @@
     </div>
     <el-menu class="sidebar-el-menu"
             :default-active="onActive"
-            :collapse="collapse"
             background-color="#324157"
             text-color="#bfcbd9"
             active-text-color="#20a0ff"
@@ -55,9 +54,9 @@ export default {
     }
   },
   created () {
-    if (document.body.clientWidth < 1280) {
-      this.collapseChage()
-    }
+    // if (document.body.clientWidth < 1280) {
+    //   this.collapseChage()
+    // }
   },
   computed: {
     ...mapState({
@@ -88,8 +87,8 @@ export default {
 .sidebar {
     display: block;
     position: absolute;
-    left: 0;
-    top: 70px;
+    left: 3vw;
+    top: 4vw;
     bottom: 0;
     overflow-y: scroll;
     &::-webkit-scrollbar{

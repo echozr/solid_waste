@@ -24,7 +24,7 @@ export default {
     },
     isGreen: {
       type: Boolean,
-      default: false
+      default: true
     }
   }
 }
@@ -33,15 +33,15 @@ export default {
 .green{
   .el-breadcrumb__item{
     .el-breadcrumb__inner{
-      width: 80px;
-      height: 22px;
+      width: 5.5vw;
+      height:1.5vw;
       text-align: center;
-      line-height: 22px;
+      line-height: 1.5vw;
       border-radius: 2px;
       border: solid 1px #05a081;
       display:inline-block;
       color: #05a081;
-      font-size: 14px;
+      font-size: 0.8vw;
     }
     .el-breadcrumb__separator{
       color: #05a081;
