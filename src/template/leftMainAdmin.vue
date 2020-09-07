@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
-    <zr-header :headerActive="headerActive" />
-    <zr-leftHead />
-    <zr-leftMenu  :collapse="collapse" @clooapseControl="clooapseControl" @changeLeftMenu="changeLeft" />
-    <div class="content-box" :class="{'content-collapse':collapse}">
+    <zr-header  />
+    <zr-leftHead :headerActive="onRoutes" />
+    <zr-leftMenu  :collapse="collapse"   :title="activeLefeHead"  @clooapseControl="clooapseControl" @changeLeftMenu="changeLeft" v-if="onRoutes"/>
+    <div class="content-box" :class="{'content-collapse':onRoutes!==undefined?true:false}">
       <div class="content">
           <transition name="move" mode="out-in">
               <keep-alive>
@@ -19,12 +19,29 @@
 import zrHeader from './common/header'
 import zrLeftMenu from './common/leftMenu'
 import zrLeftHead from './common/leftHead'
+import { mapState } from 'vuex'
 export default {
   data () {
     return {
       collapse: true,
-      headerActive: ''
+      headerActive: '',
+      activeLefeHead: []
     }
+  },
+  computed: {
+    ...mapState({
+      menus: state => state.config.leftMenu,
+      leftHead: state => state.config.topMenu
+    }),
+    onRoutes () {
+      const path = this.$route.path.replace('/', '')
+      return this.$tools.getPath(this.menus, path)
+    }
+  },
+  mounted () {
+    this.headerActive = this.onRoutes
+    this.activeLefeHead = this.leftHead.filter(v => v.index === this.headerActive)
+    console.log(this.activeLefeHead)
   },
   methods: {
     clooapseControl (val) {

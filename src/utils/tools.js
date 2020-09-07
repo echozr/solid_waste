@@ -64,7 +64,7 @@ const _tools = {
     for (const v in data) {
       for (const k in data[v]) {
         if (data[v][k].index === path) {
-          pathKey = data[v][k].index
+          pathKey = data[v][k].parent
         } else {
           if (data[v][k].subs) {
             for (const x in data[v][k].subs) {

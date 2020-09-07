@@ -93,7 +93,6 @@ export default {
     }
   },
   created () {
-    this.getPopularList(this.formInline)
   },
   methods: {
     // 点击查询

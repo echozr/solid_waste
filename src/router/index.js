@@ -51,10 +51,71 @@ const routes = [
         component: () => import(/* webpackChunkName: "comprehensive" */ '../views/Admin/Comprehensive.vue'),
         meta: { title: '综合展示' }
       },
+      // 企业信息管理
       {
-        path: '/books',
-        component: () => import(/* webpackChunkName: "books" */ '../views/Books.vue'),
-        meta: { title: '书籍管理' }
+        path: '/generalIndustrialSource',
+        component: () => import(/* webpackChunkName: "generalIndustrialSource" */ '../views/Admin/BusinessManagement/GeneralIndustrialSource.vue'),
+        meta: { title: '一般工业园' }
+      },
+      {
+        path: '/dangerWasteProduction',
+        component: () => import(/* webpackChunkName: "dangerWasteProduction" */ '../views/Admin/BusinessManagement/DangerWasteProduction.vue'),
+        meta: { title: '危废产生源' }
+      },
+      {
+        path: '/medicalWasteSources',
+        component: () => import(/* webpackChunkName: "medicalWasteSources" */ '../views/Admin/BusinessManagement/MedicalWasteSources.vue'),
+        meta: { title: '医废产生源' }
+      },
+      {
+        path: '/transportCompany',
+        component: () => import(/* webpackChunkName: "transportCompany" */ '../views/Admin/BusinessManagement/TransportCompany.vue'),
+        meta: { title: '运输企业' }
+      },
+      {
+        path: '/operatingCompany',
+        component: () => import(/* webpackChunkName: "operatingCompany" */ '../views/Admin/BusinessManagement/OperatingCompany.vue'),
+        meta: { title: '经营企业' }
+      },
+      {
+        path: '/tailingsPond',
+        component: () => import(/* webpackChunkName: "tailingsPond" */ '../views/Admin/BusinessManagement/TailingsPond.vue'),
+        meta: { title: '尾矿库' }
+      },
+      {
+        path: '/enterpriseTaskManagement',
+        component: () => import(/* webpackChunkName: "enterpriseTaskManagement" */ '../views/Admin/BusinessManagement/EnterpriseTaskManagement.vue'),
+        meta: { title: '企业任务管理' }
+      },
+      {
+        path: '/enterpriseReportReview',
+        component: () => import(/* webpackChunkName: "enterpriseReportReview" */ '../views/Admin/BusinessManagement/EnterpriseReportReview.vue'),
+        meta: { title: '企业报表审核' }
+      },
+      {
+        path: '/licenseManagement',
+        component: () => import(/* webpackChunkName: "licenseManagement" */ '../views/Admin/BusinessManagement/LicenseManagement.vue'),
+        meta: { title: '许可证管理' }
+      },
+      {
+        path: '/productionLedger',
+        component: () => import(/* webpackChunkName: "productionLedger" */ '../views/Admin/BusinessManagement/ProductionLedger.vue'),
+        meta: { title: '产生台账查询' }
+      },
+      {
+        path: '/receivingLedger',
+        component: () => import(/* webpackChunkName: "receivingLedger" */ '../views/Admin/BusinessManagement/ReceivingLedger.vue'),
+        meta: { title: '接收台账查询' }
+      },
+      {
+        path: '/disposalLedger',
+        component: () => import(/* webpackChunkName: "disposalLedger" */ '../views/Admin/BusinessManagement/DisposalLedger.vue'),
+        meta: { title: '处置台账查询' }
+      },
+      {
+        path: '/ledgerStatistics',
+        component: () => import(/* webpackChunkName: "ledgerStatistics" */ '../views/Admin/BusinessManagement/LedgerStatistics.vue'),
+        meta: { title: '台账统计' }
       },
       {
         path: '/popular',
@@ -69,11 +130,6 @@ const routes = [
     name: 'leftMainEnterprise',
     component: () => import(/* webpackChunkName: "leftMain" */ '../template/leftMainEnterprise.vue'),
     children: [
-      {
-        path: '/books',
-        component: () => import(/* webpackChunkName: "books" */ '../views/Books.vue'),
-        meta: { title: '书籍管理' }
-      },
       {
         path: '/popular',
         component: () => import(/* webpackChunkName: "popular" */ '../views/Popular.vue'),

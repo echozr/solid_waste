@@ -35,8 +35,8 @@ export default {
         },
         {
           img: require('../../assets/images/adminIcon2.png'),
-          text: '企业关联',
-          url: '/'
+          text: '企业管理',
+          url: '/generalIndustrialSource'
         },
         {
           img: require('../../assets/images/adminIcon3.png'),
