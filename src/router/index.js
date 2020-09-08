@@ -261,11 +261,6 @@ const routes = [
         path: '/gisVideoSurveillance',
         component: () => import(/* webpackChunkName: "gisVideoSurveillance" */ '../views/Admin/GisVisualization/GisVideoSurveillance.vue'),
         meta: { title: '视频监控' }
-      },
-      {
-        path: '/popular',
-        component: () => import(/* webpackChunkName: "popular" */ '../views/Popular.vue'),
-        meta: { title: '期刊管理' }
       }
     ]
   },
@@ -275,11 +270,6 @@ const routes = [
     name: 'leftMainEnterprise',
     component: () => import(/* webpackChunkName: "leftMain" */ '../template/leftMainEnterprise.vue'),
     children: [
-      {
-        path: '/popular',
-        component: () => import(/* webpackChunkName: "popular" */ '../views/Popular.vue'),
-        meta: { title: '期刊管理' }
-      }
     ]
   }
 ]

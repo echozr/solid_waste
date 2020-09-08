@@ -1,0 +1,74 @@
+/*
+* elementUI样式改写
+*/
+.handle-box{
+  padding: 10px 0;
+  min-height: 40px;
+  
+}
+.el-form-item{
+  margin-bottom: 0;
+}
+/*输入框样式*/
+.el-input__inner{
+  height: 30px;
+  line-height: 30px;
+}
+.el-button{
+  padding: 6px 20px;
+}
+.el-button--primary{
+  background-color: #05a081;
+  border-color: #05a081;
+}
+.el-form-item__label{
+  color: #3a4046;
+}
+.el-button--primary:focus, .el-button--primary:hover {
+  background: #04c39d;
+  border-color: #04c39d;
+}
+
+/*选项卡面板样式改写*/
+.el-tabs--border-card {
+  background: none;
+  border: none;
+  box-shadow: none;
+
+  .el-tabs__header {
+    background: none;
+    border: none;
+
+    .el-tabs__nav {
+      .el-tabs__item {
+        width: 8vw;
+        height: 2vw;
+        background: url('../img/tab_bg.png') no-repeat;
+        background-size: 8vw 2vw;
+        line-height: 2vw;
+        font-size: 0.8vw;
+        color: #727c87;
+        text-align: center;
+        padding-right: 25px;
+        &:not(:first-child) {
+          margin-left: -8px;
+        }
+        &:not(.is-disabled):hover {
+          color: none;
+        }
+        &.is-active {
+          background: url('../img//tab_bg_active.png') no-repeat;
+          background-size: 8vw 2vw;
+          color: #ffffff;
+          border: none;
+          z-index: 90;
+        }
+      }
+    }
+  }
+
+  .el-tabs__content {
+    background: #ffffff;
+    padding: 15px;
+  }
+}

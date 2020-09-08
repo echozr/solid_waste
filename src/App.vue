@@ -9,4 +9,5 @@
 @import url('./assets/css/iconfont.less');
 @import url('./assets/css/main.css');
 @import url('./assets/css/dark.css');
+@import url('./assets/css/style.less');
 </style>
