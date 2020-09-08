@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    视频监控
   </div>
 </template>
 <script>

@@ -6,8 +6,8 @@
         <i v-else class="el-icon-s-unfold"></i>
     </div>
     <div class="sideTitle" >
-      <span class="iconfont" v-html="title[0].icon"></span>
-      <strong>{{title[0].title}}</strong>
+      <span class="iconfont" v-html="actvieText.icon"></span>
+      <strong>{{actvieText.title}}</strong>
     </div>
     <el-menu class="sidebar-el-menu"
             :default-active="onActive"
@@ -48,10 +48,13 @@ export default {
       type: Boolean,
       default: false
     },
-    title: {
+    actvieText: {
       type: Object,
       default () {
-        return []
+        return {
+          icon: '',
+          title: ''
+        }
       }
     }
   },

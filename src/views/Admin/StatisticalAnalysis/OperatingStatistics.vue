@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    经营情况统计
   </div>
 </template>
 <script>

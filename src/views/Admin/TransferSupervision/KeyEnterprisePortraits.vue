@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    重点企业画像
   </div>
 </template>
 <script>

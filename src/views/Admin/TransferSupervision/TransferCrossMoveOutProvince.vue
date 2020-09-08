@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    跨省移出商请
   </div>
 </template>
 <script>

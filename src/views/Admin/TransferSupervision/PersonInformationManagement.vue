@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    人员卡信息管理
   </div>
 </template>
 <script>

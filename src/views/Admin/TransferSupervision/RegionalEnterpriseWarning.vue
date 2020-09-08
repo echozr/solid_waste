@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    区域企业预警提示
   </div>
 </template>
 <script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    跨省转入联单
   </div>
 </template>
 <script>

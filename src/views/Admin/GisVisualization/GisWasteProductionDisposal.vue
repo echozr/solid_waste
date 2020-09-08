@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    产废及处置情况
   </div>
 </template>
 <script>

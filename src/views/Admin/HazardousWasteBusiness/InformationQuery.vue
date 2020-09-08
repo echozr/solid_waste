@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    信息查询
   </div>
 </template>
 <script>

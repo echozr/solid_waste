@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    省内转移联单
   </div>
 </template>
 <script>

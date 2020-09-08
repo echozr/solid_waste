@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    危废转移统计
   </div>
 </template>
 <script>

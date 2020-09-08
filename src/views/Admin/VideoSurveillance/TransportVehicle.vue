@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    运输车辆
   </div>
 </template>
 <script>

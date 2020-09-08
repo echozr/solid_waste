@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    固废统计
   </div>
 </template>
 <script>

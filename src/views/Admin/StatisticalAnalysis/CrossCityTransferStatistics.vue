@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    跨省转移统计
   </div>
 </template>
 <script>

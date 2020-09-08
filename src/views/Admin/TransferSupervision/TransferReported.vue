@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    已上报转移商情
   </div>
 </template>
 <script>

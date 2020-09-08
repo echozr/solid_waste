@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
     <zr-header  />
-    <zr-leftHead :headerActive="onRoutes" />
-    <zr-leftMenu  :collapse="collapse"   :title="activeLefeHead"  @clooapseControl="clooapseControl" @changeLeftMenu="changeLeft" v-if="onRoutes"/>
+    <zr-leftHead :headerActive="onRoutes" @changeTitle="changeTitle" />
+    <zr-leftMenu  :collapse="collapse"   :actvieText="activeLefeHead"  @clooapseControl="clooapseControl" @changeLeftMenu="changeLeft" v-if="onRoutes"/>
     <div class="content-box" :class="{'content-collapse':onRoutes!==undefined?true:false}">
       <div class="content">
           <transition name="move" mode="out-in">
@@ -25,7 +25,14 @@ export default {
     return {
       collapse: true,
       headerActive: '',
-      activeLefeHead: []
+      activeLefeHead: {}
+    }
+  },
+  watch: {
+    '$route.path' (newVal, oldVal) {
+      const path = newVal.replace('/', '')
+      const pathParent = this.$tools.getPath(this.menus, path)
+      this.activeLefeHead = this.leftHead.filter(v => v.index === pathParent)[0]
     }
   },
   computed: {
@@ -39,9 +46,7 @@ export default {
     }
   },
   mounted () {
-    this.headerActive = this.onRoutes
-    this.activeLefeHead = this.leftHead.filter(v => v.index === this.headerActive)
-    console.log(this.activeLefeHead)
+    this.activeLefeHead = this.leftHead.filter(v => v.index === this.onRoutes)[0]
   },
   methods: {
     clooapseControl (val) {
@@ -49,6 +54,13 @@ export default {
     },
     changeLeft (val) {
       this.headerActive = val
+    },
+    changeTitle (val) {
+      console.log(this.$route.path.replace('/', ''))
+      // eslint-disable-next-line no-debugger
+      debugger
+      this.activeLefeHead = this.leftHead.filter(v => v.index === this.onRoutes)[0]
+      console.log(this.activeLefeHead)
     }
   },
   components: {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    交易汇总
   </div>
 </template>
 <script>

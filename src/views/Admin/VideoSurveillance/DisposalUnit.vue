@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    处置单位
   </div>
 </template>
 <script>

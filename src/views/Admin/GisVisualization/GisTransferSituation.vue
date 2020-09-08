@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    转移情况
   </div>
 </template>
 <script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    产废单位
   </div>
 </template>
 <script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    企业分布
   </div>
 </template>
 <script>

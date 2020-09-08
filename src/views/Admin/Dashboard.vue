@@ -41,27 +41,27 @@ export default {
         {
           img: require('../../assets/images/adminIcon3.png'),
           text: '转移监管',
-          url: '/'
+          url: '/pendingWarningInformation'
         },
         {
           img: require('../../assets/images/adminIcon4.png'),
           text: '交易发布',
-          url: '/'
+          url: '/publicShow'
         },
         {
           img: require('../../assets/images/adminIcon5.png'),
           text: '视频监控',
-          url: '/'
+          url: '/wasteProductionUnit'
         },
         {
           img: require('../../assets/images/adminIcon6.png'),
           text: '统计分析',
-          url: '/'
+          url: '/comprehensiveStatistics'
         },
         {
           img: require('../../assets/images/adminIcon7.png'),
           text: 'GIS可视化',
-          url: '/'
+          url: '/gisEnterpriseDistribution'
         },
         {
           img: require('../../assets/images/adminIcon8.png'),

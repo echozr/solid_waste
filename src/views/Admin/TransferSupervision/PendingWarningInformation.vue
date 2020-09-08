@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    待处理预警信息
   </div>
 </template>
 <script>

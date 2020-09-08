@@ -1,12 +1,8 @@
 <template>
-  <div>
-    综合展示
-  </div>
+  <div>车辆转移轨迹</div>
 </template>
 <script>
-export default {
-}
+export default {}
 </script>
 <style lang="less" scoped>
-
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    转移计划查询
   </div>
 </template>
 <script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    综合展示
+    综合统计
   </div>
 </template>
 <script>
